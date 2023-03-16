@@ -9,11 +9,28 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-        appBar: AppBar(
-          backgroundColor: Colors.amber,
-          title: Text('One Repair'),
+        backgroundColor: Colors.blue,
+        body: SafeArea(
+          child: Row(
+            children: <Widget>[
+              Container(
+                height: 100.0,
+                width: 100.0,
+                color: Colors.white,
+                child: Text('One Repair'),
+              ),
+              SizedBox(
+                width: 5.0,
+              ),
+              Container(
+                height: 100.0,
+                width: 100.0,
+                color: Colors.red,
+                child: Text('One Time'),
+              ),
+            ],
+          ),
         ),
-        body: Container(),
       ),
     );
   }
