@@ -33,6 +33,16 @@ class MyApp extends StatelessWidget {
                   color: Colors.white,
                 ),
               ),
+              Container(
+                child: Row(
+                  children: <Widget>[
+                    Icon(
+                      Icons.phone,
+                      color: Colors.red,
+                    ),
+                  ],
+                ),
+              ),
             ],
           ),
         ),
