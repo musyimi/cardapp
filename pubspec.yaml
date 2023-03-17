@@ -79,7 +79,7 @@ flutter:
         - asset: fonts/Pacifico-Regular.ttf
     - family: SourceSansPro
       fonts:
-        - asset: fonts/SourceSansPro-Regular.ttf
+        - asset: fonts/SourceSansPro-SemiBold.ttf
 
   #   - family: Trajan Pro
   #     fonts:

@@ -12,6 +12,7 @@ class MyApp extends StatelessWidget {
         backgroundColor: Colors.blueGrey,
         body: SafeArea(
           child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
               CircleAvatar(
                 radius: 75.0,
@@ -33,14 +34,111 @@ class MyApp extends StatelessWidget {
                   color: Colors.white,
                 ),
               ),
-              Container(
-                child: Row(
-                  children: <Widget>[
-                    Icon(
+              SizedBox(
+                height: 20.0,
+                width: 200.0,
+                child: Divider(
+                  color: Colors.white,
+                ),
+              ),
+              Card(
+                margin: EdgeInsets.fromLTRB(25.0, 30.0, 25.0, 10.0),
+                child: Padding(
+                  padding: EdgeInsets.all(3.0),
+                  child: ListTile(
+                    leading: Icon(
                       Icons.phone,
-                      color: Colors.red,
+                      color: Colors.black,
+                      size: 30.0,
                     ),
-                  ],
+                    title: Text(
+                      '0722000000',
+                      style: TextStyle(
+                          fontFamily: 'SourceSansPro',
+                          fontSize: 21.0,
+                          color: Colors.black),
+                    ),
+                  ),
+                ),
+              ),
+              Card(
+                margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
+                child: Padding(
+                  padding: EdgeInsets.all(3.0),
+                  child: ListTile(
+                    leading: Icon(
+                      Icons.email,
+                      color: Colors.black,
+                      size: 30.0,
+                    ),
+                    title: Text(
+                      'cleveland.browns@giggidymail.com',
+                      style: TextStyle(
+                          fontFamily: 'SourceSansPro',
+                          fontSize: 21.0,
+                          color: Colors.black),
+                    ),
+                  ),
+                ),
+              ),
+              Card(
+                margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
+                child: Padding(
+                  padding: EdgeInsets.all(3.0),
+                  child: ListTile(
+                    leading: Icon(
+                      Icons.location_pin,
+                      color: Colors.black,
+                      size: 30.0,
+                    ),
+                    title: Text(
+                      'Muthaiga near abc church',
+                      style: TextStyle(
+                          fontFamily: 'SourceSansPro',
+                          fontSize: 21.0,
+                          color: Colors.black),
+                    ),
+                  ),
+                ),
+              ),
+              Card(
+                margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
+                child: Padding(
+                  padding: EdgeInsets.all(3.0),
+                  child: ListTile(
+                    leading: Icon(
+                      Icons.battery_full_sharp,
+                      color: Colors.black,
+                      size: 30.0,
+                    ),
+                    title: Text(
+                      'Battery number',
+                      style: TextStyle(
+                          fontFamily: 'SourceSansPro',
+                          fontSize: 21.0,
+                          color: Colors.black),
+                    ),
+                  ),
+                ),
+              ),
+              Card(
+                margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
+                child: Padding(
+                  padding: EdgeInsets.all(3.0),
+                  child: ListTile(
+                    leading: Icon(
+                      Icons.sim_card_outlined,
+                      color: Colors.black,
+                      size: 30.0,
+                    ),
+                    title: Text(
+                      'IMEI/product no.',
+                      style: TextStyle(
+                          fontFamily: 'SourceSansPro',
+                          fontSize: 21.0,
+                          color: Colors.black),
+                    ),
+                  ),
                 ),
               ),
             ],
